@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'Goods_id'  =>  '商品ID号',
+    'Store_id'  =>  '商家ID号',
+    'Type'  =>  '商品类型',
+    'Showtype'  =>  '展示类型',
+    'Goods_name'  =>  '商品名称',
+    'Spec_qty'  =>  '属性的数量数目',
+    'Spec_name_1'  =>  '第一属性名',
+    'Spec_name_2'  =>  '第一属性名',
+    'If_show'  =>  '是否显示',
+    'Closed'  =>  '审核商品',
+    'Default_image'  =>  '默认图片地址',
+    'Point'  =>  '赠送积分数量',
+    'Tax'  =>  '税率',
+    'Commission'  =>  '佣金',
+    'Cate_id'  =>  '新商品所属分类ID',
+    'Cate_id_1'  =>  '新该商品第一级分类ID',
+    'Cate_id_2'  =>  '新该商品第二级分类ID',
+    'Cate_id_3'  =>  '新该商品第三级分类ID',
+    'Cate_name'  =>  '商品分类',
+    'Brand_id'  =>  '品牌ID号',
+    'Brand'  =>  '商品品牌名称',
+    'Goodstype'  =>  '商品类型：0=单一商品、1=打包商品',
+    'Add_name'  =>  '添加人',
+    'Readytime'  =>  '备货期',
+    'Keep_alive'  =>  '保质期天数',
+    'Timestamp' => '更新时间'
+];

@@ -1,0 +1,100 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-store_id" class="control-label col-xs-12 col-sm-2">{:__('Store_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_id" data-rule="required" data-source="store/store/index" class="form-control selectpage" name="row[store_id]" type="text" value="{$row.store_id}" data-field="store_name" data-primary-key="store_id" data-params='state=1'>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-type" class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select  id="c-type" class="form-control selectpicker" name="row[type]">
+                {foreach name="typeList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.type"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-showtype" class="control-label col-xs-12 col-sm-2">{:__('Showtype')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-showtype" class="form-control selectpicker" name="row[showtype]">
+                {foreach name="showtypeList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.showtype"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-goods_name" class="control-label col-xs-12 col-sm-2">{:__('Goods_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-goods_name" data-rule="required" class="form-control" name="row[goods_name]" type="text" value="{$row.goods_name}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-if_show" class="control-label col-xs-12 col-sm-2">{:__('If_show')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-if_show" data-rule="required" class="form-control selectpicker" name="row[if_show]">
+                {foreach name="ifShowList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.if_show"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-closed" class="control-label col-xs-12 col-sm-2">{:__('Closed')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-closed" data-rule="required" class="form-control selectpicker" name="row[closed]">
+                {foreach name="closedList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.closed"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-default_image" class="control-label col-xs-12 col-sm-2">{:__('Default_image')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-default_image" data-rule="required" class="form-control" size="50" name="row[default_image]" type="text" value="{$row.default_image}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-default_image" class="btn btn-danger plupload" data-input-id="c-default_image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-default_image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-default_image" class="btn btn-primary fachoose" data-input-id="c-default_image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-default_image"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-default_image"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-tax" class="control-label col-xs-12 col-sm-2">{:__('Tax')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tax" class="form-control" step="0.0001" name="row[tax]" type="number" value="{$row.tax}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-commission" class="control-label col-xs-12 col-sm-2">{:__('Commission')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-commission" class="form-control" step="0.0001" name="row[commission]" type="number" value="{$row.commission}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-cate_id" class="control-label col-xs-12 col-sm-2">{:__('Cate_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-cate_id" data-rule="required" data-source="gcategory/gcategory/index" class="form-control selectpage" name="row[cate_id]" type="text" value="{$row.cate_id}" data-field="cate_name" data-primary-key="cate_id">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,364 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-contract_id" class="control-label col-xs-12 col-sm-2">{:__('Contract_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contract_id" data-rule="required" data-source="contract/index" class="form-control selectpage" name="row[contract_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_name" class="control-label col-xs-12 col-sm-2">{:__('Store_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_name" data-rule="required" class="form-control" name="row[store_name]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_type" class="control-label col-xs-12 col-sm-2">{:__('Store_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_type" data-rule="required" class="form-control" name="row[store_type]" type="text" value="material">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-owner_name" class="control-label col-xs-12 col-sm-2">{:__('Owner_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-owner_name" data-rule="required" class="form-control" name="row[owner_name]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-owner_card" class="control-label col-xs-12 col-sm-2">{:__('Owner_card')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-owner_card" data-rule="required" class="form-control" name="row[owner_card]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-owner_mob" class="control-label col-xs-12 col-sm-2">{:__('Owner_mob')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-owner_mob" class="form-control" name="row[owner_mob]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-company_name" class="control-label col-xs-12 col-sm-2">{:__('Company_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-company_name" class="form-control" name="row[company_name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-address" class="control-label col-xs-12 col-sm-2">{:__('Address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address" class="form-control" name="row[address]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-company_certificates" class="control-label col-xs-12 col-sm-2">{:__('Company_certificates')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-company_certificates" class="form-control" name="row[company_certificates]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-company_products" class="control-label col-xs-12 col-sm-2">{:__('Company_products')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-company_products" class="form-control" name="row[company_products]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_business" class="control-label col-xs-12 col-sm-2">{:__('Contact_business')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contact_business" class="form-control" name="row[contact_business]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-tel_business" class="control-label col-xs-12 col-sm-2">{:__('Tel_business')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tel_business" class="form-control" name="row[tel_business]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_finance" class="control-label col-xs-12 col-sm-2">{:__('Contact_finance')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contact_finance" class="form-control" name="row[contact_finance]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-tel_finance" class="control-label col-xs-12 col-sm-2">{:__('Tel_finance')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tel_finance" class="form-control" name="row[tel_finance]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-address_finance" class="control-label col-xs-12 col-sm-2">{:__('Address_finance')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address_finance" class="form-control" name="row[address_finance]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-finance_bank_name" class="control-label col-xs-12 col-sm-2">{:__('Finance_bank_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-finance_bank_name" class="form-control" name="row[finance_bank_name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-finance_bank" class="control-label col-xs-12 col-sm-2">{:__('Finance_bank')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-finance_bank" class="form-control" name="row[finance_bank]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-finance_account" class="control-label col-xs-12 col-sm-2">{:__('Finance_account')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-finance_account" class="form-control" name="row[finance_account]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-finance_bond" class="control-label col-xs-12 col-sm-2">{:__('Finance_bond')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-finance_bond" class="form-control" name="row[finance_bond]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-finance_service" class="control-label col-xs-12 col-sm-2">{:__('Finance_service')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-finance_service" class="form-control" name="row[finance_service]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-finance_company_type" class="control-label col-xs-12 col-sm-2">{:__('Finance_company_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-finance_company_type" class="form-control" name="row[finance_company_type]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-active_commission" class="control-label col-xs-12 col-sm-2">{:__('Active_commission')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-active_commission" class="form-control" step="0.01" name="row[active_commission]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-default_commission" class="control-label col-xs-12 col-sm-2">{:__('Default_commission')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-default_commission" class="form-control" step="0.01" name="row[default_commission]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-default_tax" class="control-label col-xs-12 col-sm-2">{:__('Default_tax')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-default_tax" class="form-control" step="0.01" name="row[default_tax]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-def_beihuo_time" class="control-label col-xs-12 col-sm-2">{:__('Def_beihuo_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-def_beihuo_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[def_beihuo_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-taxtype" class="control-label col-xs-12 col-sm-2">{:__('Taxtype')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-taxtype" class="form-control selectpicker" name="row[taxtype]">
+                {foreach name="taxtypeList" item="vo"}
+                    <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_logo" class="control-label col-xs-12 col-sm-2">{:__('Store_logo')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_logo" class="form-control" name="row[store_logo]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-state" class="control-label col-xs-12 col-sm-2">{:__('State')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="radio">
+            {foreach name="stateList" item="vo"}
+            <label for="row[state]-{$key}"><input id="row[state]-{$key}" name="row[state]" type="radio" value="{$key}" {in name="key" value="3) unsigne"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-close_reason" class="control-label col-xs-12 col-sm-2">{:__('Close_reason')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-close_reason" data-rule="required" class="form-control" name="row[close_reason]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-add_time" class="control-label col-xs-12 col-sm-2">{:__('Add_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-add_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[add_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-end_time" class="control-label col-xs-12 col-sm-2">{:__('End_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-end_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-certification" class="control-label col-xs-12 col-sm-2">{:__('Certification')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-certification" class="form-control" name="row[certification]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-sort_order" class="control-label col-xs-12 col-sm-2">{:__('Sort_order')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sort_order" data-rule="required" class="form-control" name="row[sort_order]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_content" class="control-label col-xs-12 col-sm-2">{:__('Store_content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-store_content" class="form-control editor" rows="5" name="row[store_content]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_service" class="control-label col-xs-12 col-sm-2">{:__('Store_service')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-store_service" class="form-control " rows="5" name="row[store_service]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_consumer" class="control-label col-xs-12 col-sm-2">{:__('Store_consumer')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-store_consumer" class="form-control " rows="5" name="row[store_consumer]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-im_qq" class="control-label col-xs-12 col-sm-2">{:__('Im_qq')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-im_qq" class="form-control" name="row[im_qq]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_title" class="control-label col-xs-12 col-sm-2">{:__('Store_title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_title" class="form-control" name="row[store_title]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_keywords" class="control-label col-xs-12 col-sm-2">{:__('Store_keywords')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_keywords" class="form-control" name="row[store_keywords]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_description" class="control-label col-xs-12 col-sm-2">{:__('Store_description')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_description" class="form-control" name="row[store_description]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-Insert_time" class="control-label col-xs-12 col-sm-2">{:__('Insert_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Insert_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[Insert_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-last_update" class="control-label col-xs-12 col-sm-2">{:__('Last_update')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-last_update" data-rule="required" class="form-control" name="row[last_update]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-transfer_tel" class="control-label col-xs-12 col-sm-2">{:__('Transfer_tel')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-transfer_tel" class="form-control" name="row[transfer_tel]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-month" class="control-label col-xs-12 col-sm-2">{:__('Month')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-month" class="form-control selectpicker" name="row[month]">
+                {foreach name="monthList" item="vo"}
+                    <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-store_info" class="control-label col-xs-12 col-sm-2">{:__('Store_info')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-store_info" data-rule="required" class="form-control" name="row[store_info]" type="text" value=" ">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-work_stime" class="control-label col-xs-12 col-sm-2">{:__('Work_stime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-work_stime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[work_stime]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-work_etime" class="control-label col-xs-12 col-sm-2">{:__('Work_etime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-work_etime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[work_etime]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-freight" class="control-label col-xs-12 col-sm-2">{:__('Freight')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-freight" class="form-control selectpicker" name="row[freight]">
+                {foreach name="freightList" item="vo"}
+                    <option value="{$key}" {in name="key" value="2"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-timestamp" class="control-label col-xs-12 col-sm-2">{:__('Timestamp')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-timestamp" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[timestamp]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-taxapply" class="control-label col-xs-12 col-sm-2">{:__('Taxapply')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-taxapply" class="form-control selectpicker" name="row[taxapply]">
+                {foreach name="taxapplyList" item="vo"}
+                    <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-longitude" class="control-label col-xs-12 col-sm-2">{:__('Longitude')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-longitude" class="form-control" name="row[longitude]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-latitude" class="control-label col-xs-12 col-sm-2">{:__('Latitude')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-latitude" class="form-control" name="row[latitude]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-is_main" class="control-label col-xs-12 col-sm-2">{:__('Is_main')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-is_main" class="form-control selectpicker" name="row[is_main]">
+                {foreach name="isMainList" item="vo"}
+                    <option value="{$key}" {in name="key" value="0"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

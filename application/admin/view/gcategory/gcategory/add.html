@@ -1,0 +1,85 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-cate_type" class="control-label col-xs-12 col-sm-2">{:__('Cate_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select id="c-cate_type" data-rule="required" class="form-control selectpicker" name="row[cate_type]">
+                {foreach name="typeList" item="vo"}
+                <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-parent_id" class="control-label col-xs-12 col-sm-2">{:__('Parent_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select id="c-parent_id" data-rule="required" class="form-control selectpicker" name="row[parent_id]">
+                {foreach name="parentList" item="vo"}
+                <option data-type="{$vo.type}" value="{$key}" {in name="key" value=""}selected{/in}>{$vo.name}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Cate_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-cate_name" data-rule="required" class="form-control form-control" name="row[cate_name]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sort_order')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sort_order" data-rule="required" class="form-control form-control" name="row[sort_order]" type="number" value="255">
+        </div>
+    </div>
+
+    <input id="c-seo_key" class="form-control form-control" name="row[seo_key]" type="hidden">
+    <input id="c-seo_description" class="form-control form-control" name="row[seo_description]" type="hidden">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('If_show')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select id="c-if_show" data-rule="required" class="form-control selectpicker" name="row[if_show]">
+                {foreach name="ifshowList" item="vo"}
+                <option value="{$key}" {in name="key" value="1"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Keyword')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-keyword" class="form-control form-control" name="row[keyword]" type="text">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-gcatelog" class="control-label col-xs-12 col-sm-2">{:__('Gcatelog')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-gcatelog" class="form-control" size="50" name="row[gcatelog]" type="text" value="">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-gcatelog" class="btn btn-danger plupload" data-input-id="c-gcatelog" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-gcatelog"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-gcatelog" class="btn btn-primary fachoose" data-input-id="c-gcatelog" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-gcatelog"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-gcatelog"></ul>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,88 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-rank_id" class="control-label col-xs-12 col-sm-2">{:__('Rank_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-rank_id" data-rule="required" class="form-control selectpicker" name="row[rank_id]">
+                {foreach name="rankIdList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.rank_id"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-rebate_order_type" class="control-label col-xs-12 col-sm-2">{:__('Rebate_order_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-rebate_order_type" class="form-control selectpicker" name="row[rebate_order_type]">
+                {foreach name="rebateOrderTypeList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.rebate_order_type"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-rebate_rate" class="control-label col-xs-12 col-sm-2">{:__('Rebate_rate')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-rebate_rate" data-rule="required" class="form-control" step="0.0001" name="row[rebate_rate]" type="number" value="{$row.rebate_rate}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-rebate_type" class="control-label col-xs-12 col-sm-2">{:__('Rebate_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-rebate_type" data-rule="required" class="form-control selectpicker" name="row[rebate_type]">
+                {foreach name="rebateTypeList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.rebate_type"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-rebate_target" class="control-label col-xs-12 col-sm-2">{:__('Rebate_target')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-rebate_target" data-rule="required" class="form-control selectpicker" name="row[rebate_target]">
+                {foreach name="rebateTargetList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.rebate_target"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-rebate_target_level" class="control-label col-xs-12 col-sm-2">{:__('Rebate_target_level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-rebate_target_level" data-rule="required" class="form-control" name="row[rebate_target_level]" type="number" value="{$row.rebate_target_level}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-rebate_target_rank" class="control-label col-xs-12 col-sm-2">{:__('Rebate_target_rank')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-rebate_target_rank" data-rule="required" class="form-control" name="row[rebate_target_rank]" type="number" value="{$row.rebate_target_rank}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-is_del" class="control-label col-xs-12 col-sm-2">{:__('Is_del')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-is_del" data-rule="required" class="form-control selectpicker" name="row[is_del]">
+                {foreach name="isDelList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.is_del"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

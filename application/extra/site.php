@@ -20,6 +20,12 @@ return array (
     'article' => 'Article',
     'test' => 'Test',
   ),
+  'gcategorytype' => //material 火币，point 积分，service 服务
+  array (
+    'material' => 'Material',
+    'service' => 'Service',
+    'point' => 'Point',
+  ),
   'configgroup' => 
   array (
     'basic' => 'Basic',
